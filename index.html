@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sp3cifier | RBC</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-grid"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo gothic">Sp3cifier</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#donate">Donate</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <img src="https://media.tenor.com/s3PhCO9YgvkAAAAM/eminence-in-shadow.gif" alt="sp3cifier avatar" class="hero-avatar" />
+      </div>
+      <div>
+        <h1 class="hero-title gothic">SP3CIFIER</h1>
+        <div class="hero-desc">co founder of rbc</div>
+        <div class="hero-heroicons">
+          <a href="#links" title="My Links">▼</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links Section -->
+  <section class="links-section" id="links">
+    <h2 class="section-title">// CONNECT</h2>
+    <div class="connect-tiles">
+      <a href="https://discord.com/invite/rbc" target="_blank" class="tile discord">
+        <span class="tile-icon">🩸</span>
+        <div>
+          <span class="tile-title">Discord</span>
+          <span class="tile-desc">Join my server</span>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/sp3cifierr" target="_blank" class="tile insta">
+        <span class="tile-icon">🦇</span>
+        <div>
+          <span class="tile-title">Instagram</span>
+          <span class="tile-desc">Follow me</span>
+        </div>
+      </a>
+      <div class="tile ltc" onclick="copyLtc()">
+        <span class="tile-icon">🪙</span>
+        <div>
+          <span class="tile-title">LTC Address</span>
+          <span class="tile-desc" id="ltc-addr">LdQbWGJUwsWvX3GbCyCH7Lz62KdLxrXUFd</span>
+        </div>
+        <span class="tile-copy" id="ltc-copy-btn" title="Copy">📋</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Sp3cifier // co founder of rbc</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
